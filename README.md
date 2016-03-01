@@ -7,6 +7,9 @@ Extracts marked strings that need translations, stores texts with translations i
 ## Quick start:
 
 ### Managing the language packs
+
+Assume some Lua source files where translatable strings are wrapped in `TR` function calls
+
 ```lua
 local lite_i18n = require"lite_i18n"
 
@@ -19,7 +22,7 @@ lite_i18n.dump_pack(packs.en, "en", "to_trans.csv")
 -- load in the translated texts, add to existing collection
 lite_i18n.load_packs("from_trans.csv", packs)
 
--- store all translation for later user
+-- store all translation for later use
 lite_i18n.dump_packs(packs, "all_trans.csv")
 
 -- write the language module
