@@ -64,23 +64,23 @@ These packs are written to CSV in three columns: `<orginal text>,<region>,<trans
 
 ## Functions
 
-### `parse_string( src, [pack] )`
-Parses a given string `src` and pull out all the `TR` marked pharses, entering them into the given pack (or new empty table if no provided)
+ *  `parse_string( src, [pack] )`
+    Parses a given string `src` and pull out all the `TR` marked pharses, entering them into the given pack (or new empty table if no provided)
 
-### `parse_file( path, [pack] )`
-Same as `parse_string` but loads the source from a file
+ *  `parse_file( path, [pack] )`
+    Same as `parse_string` but loads the source from a file
 
-### `dump_pack( pack, lang, path )`
-Writes a single langauge pack to a CSV file, marking it as `lang` region
+ *  `dump_pack( pack, lang, path )`
+    Writes a single langauge pack to a CSV file, marking it as `lang` region
 
-### `dump_packs( packs, path )`
-Writes a whole collection of language packs to CSV file
+ *  `dump_packs( packs, path )`
+    Writes a whole collection of language packs to CSV file
 
-### `load_packs( path, [packs] )`
-Loads language packs from CSV file at given path into packs table (or new empty table if no provided)
+ *  `load_packs( path, [packs] )`
+    Loads language packs from CSV file at given path into packs table (or new empty table if no provided)
 
-### `write_package( packs, path )`
-Writes a Lua module with all translations given in packs
+ *  `write_package( packs, path )`
+    Writes a Lua module with all translations given in packs
 
 ## Thanks
 
